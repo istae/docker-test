@@ -10,7 +10,6 @@ Docker
 -----------------------------------
 curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh && sudo usermod -aG docker root
 docker swarm join --token SWMTKN-1-0vvwfrcs4j6y9n91wub82i9y651cg799pw64qo5a6kx3y1h8to-9dbr2z1gdt0xrh3bycb0etgj2 10.128.0.16:2377
-docker tag [IMAGE-NAME] -image gcr.io/[PROJECT-ID]/[IMAGE-NAME]:[TAG]
 docker push gcr.io/[PROJECT-ID]/IMAGE-NAME]:[TAG]
 docker pull gcr.io/[PROJECT-ID]/IMAGE-NAME]:[TAG]
 docker network create -d overlay myoverlaynetwork
