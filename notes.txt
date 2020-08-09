@@ -17,6 +17,7 @@ docker network create -d overlay myoverlaynetwork
 docker service create --replicas 1 --name node-hello -d --network overlaynetwork -p 80:3000 node-hello
 docker rmi [image id]
 docker service create --replicas 5 -p 80:80 --name web nginx
+docker build -t node-hello .
 
 Kubernetes
 +++++++++++++++++++++++++++++++++++
